@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var models = []()
+    var models = [ToDoListItem]()
     
     @IBOutlet weak var myTable: UITableView!
     @IBAction func addBtn(_ sender: UIButton) {
